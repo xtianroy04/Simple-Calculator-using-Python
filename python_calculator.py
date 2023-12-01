@@ -29,6 +29,7 @@ def main():
     if choice not in [1, 2, 3, 4]:
         print("Error: Please enter a valid choice (1/2/3/4).")
         return
+    
     try:
         num1 = float(input("Enter first number: "))
         num2 = float(input("Enter second number: "))
@@ -36,16 +37,16 @@ def main():
         print("Error: It must be numbers.")
         return
 
-    if choice == '1':
+    if choice == 1:
         result = multiply(num1, num2)
         print(f"{num1} * {num2} = {result}")
-    elif choice == '2':
+    elif choice == 2:
         result = add(num1, num2)
         print(f"{num1} + {num2} = {result}")
-    elif choice == '3':
+    elif choice == 3:
         result = subtract(num1, num2)
         print(f"{num1} - {num2} = {result}")
-    elif choice == '4':
+    elif choice == 4:
         result = divide(num1, num2)
         print(f"{num1} / {num2} = {result}")
     else:
